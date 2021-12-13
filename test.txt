@@ -21,9 +21,9 @@ int main()
   cout << "Enter the position: "; //position specified
   cin >> pos;
 
-  for (i = ---; i >= pos; i--)
-    arr[--] = arr[--];
-    arr[--] = insElem;
+  for (i = size; i >= pos; i--)
+    arr[i] = arr[i-1];
+    arr[pos] = insElem;
 
   //Display new array
   cout << "New Array after Insertion:\n";
